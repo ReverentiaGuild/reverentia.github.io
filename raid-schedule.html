@@ -2,20 +2,76 @@
     <head>
         <style>
             body {
-                background-color: #000000;
+                background-color: #162F3D;
                 color: whitesmoke;
             }
 
-            h1, div {
+            h1 {
+                font-size: 50px;
+                font-weight: bolder;
+                -webkit-text-stroke: 2px #2F7090;         
+                color: #162F3D;
+            }
+
+            div, h1 {
                 text-align: center;
+            }
+
+            ul li {
+                list-style: none;
+            }
+
+            #content ul li {
+                margin: 15px 0;
+            }
+
+            div#menu {
+                /*border:2px solid green;*/
+                width:200px;
+                float:left;
+                margin:25px 0 10px 5px;
+                height:500px;
+            }
+
+            div#menu ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 200px;
+                background-color: #332f2f;
+            }
+
+            div#menu li a {
+                display: block;
+                color: whitesmoke;
+                padding: 8px 16px;                
+                text-decoration: none;   
+            }
+
+            div#menu li a:hover {
+                background-color: whitesmoke;
+                color: #332f2f;          
             }
         </style>        
     </head>
     <body>
         <h1>Reverentia Raid Schedules</h1>
-        
-        <div> 
-            example: Monday 7pm
+
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>                    
+                <li><a href="raid-schedule.html">Raid Schedules</a></li>             
+            </ul>
+        </div>
+
+        <div id="content"> 
+            <ul>
+                <li>Argos (P1-2-3): Jeudi 9h30 PM EST</li>                
+                <li>Valtan (Normal): Vendredi 10 PM EST</li>
+                <li>Valtan (Hard): TBD</li>
+                <li>Guild Siege: Lundi 8h00 PM EST</li>
+                <li>Guild Raid: Lundi 7h30 PM EST</li>
+            </ul>            
         </div>
     </body>
 </html>
